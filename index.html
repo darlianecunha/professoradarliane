@@ -1,10 +1,10 @@
 <!DOCTYPE html>
+
 <html lang="pt-BR">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
 <title>CV • Darliane Ribeiro Cunha</title>
-
 <style>
 :root { --bg:#0d2b1f; --bg-2:#12402c; --accent:#2ec27e; --text:#e8f5ef; --muted:#b6d3c5; --border:#1f5a42; --shadow:rgba(0,0,0,0.3); }
 *{box-sizing:border-box} html,body{margin:0;padding:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Helvetica Neue,Arial,Noto Sans,Liberation Sans,sans-serif}
@@ -25,418 +25,54 @@ body{background:linear-gradient(180deg,var(--bg) 0%,#0b241a 100%);color:var(--te
 .cv-table tr:nth-child(even) td{background:rgba(13,43,31,.45)}
 .cv-table a{color:var(--accent);text-decoration:none;border-bottom:1px dashed rgba(46,194,126,.4)}
 .cv-table a:hover{border-bottom-color:var(--accent)}
-</style>
 
+/* Card layout replacing tables */
+.cv-list{display:flex;flex-direction:column;gap:16px}
+.cv-card{background:rgba(13,43,31,.6);border:1px solid var(--border);border-radius:16px;padding:14px;box-shadow:0 6px 16px var(--shadow)}
+.cv-item{display:grid;grid-template-columns:140px 1fr;gap:8px 16px;margin:2px 0}
+.cv-item .label{color:var(--muted);font-weight:600}
+.cv-item .value a{color:var(--accent);text-decoration:none;border-bottom:1px dashed rgba(46,194,126,.4)}
+.cv-item .value a:hover{border-bottom-color:var(--accent)}
+@media (max-width:640px){
+  .cv-item{grid-template-columns:1fr}
+  .cv-item .label{opacity:.9}
+}
+</style>
 </head>
 <body>
-  <div class="container">
-    <header class="header">
-      <h1 class="title">Darliane Ribeiro Cunha</h1>
-      <p class="subtitle">Currículo — Publicações e Produções</p>
-      <div class="tabs">
-        <button class="tab-btn active" data-target="tab0">Artigos</button>
-<button class="tab-btn " data-target="tab1">Cap de livros</button>
-<button class="tab-btn " data-target="tab2">Anais de congressos</button>
-<button class="tab-btn " data-target="tab3">Producão técnica</button>
-<button class="tab-btn " data-target="tab4">Sugestões</button>
-
-      </div>
-    </header>
-    
-    <section id="tab0" class="tab-content" >
-        <h2>artigos</h2>
-        <table border="1" class="dataframe cv-table">
-  <thead>
-    <tr style="text-align: right;">
-      <th>Ano</th>
-      <th>Título</th>
-      <th>Autores</th>
-      <th>Periódico</th>
-      <th>DOI / Site</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>2025</td>
-      <td>Strategies For Decarbonisation in The Port and Maritime Sector: Key Challenges and Leading Ports</td>
-      <td>Cunha, D.R.; Oliveira, C.B.M.; Porte, M.S.; Cutrim, S.S.; Pereira, N.N.</td>
-      <td>RGSA (ANPAD), v.19, e011963</td>
-      <td><a href="https://doi.org/10.24857/rgsa.v19n4-071" target="_blank" rel="noopener">10.24857/rgsa.v19n4-071</a></td>
-    </tr>
-    <tr>
-      <td>2025</td>
-      <td>SDG attributes: A sustainability assessment framework for Brazilian ports</td>
-      <td>Cunha, D.R.; Costa, M.D.C.; Oliveira, C.B.M.; Pereira, N.N.</td>
-      <td>Marine Policy, v.181, p.106841</td>
-      <td><a href="https://doi.org/10.1016/j.marpol.2025.106841" target="_blank" rel="noopener">10.1016/j.marpol.2025.106841</a></td>
-    </tr>
-    <tr>
-      <td>2024</td>
-      <td>A bibliometric analysis of sustainable development goals in the maritime industry and port sector</td>
-      <td>Diniz, N.V.; Cunha, D.R.; Porte, M.S.; Oliveira, C.B.M.; Fernandes, F.F.</td>
-      <td>Regional Studies in Marine Science, v.69, 103319</td>
-      <td><a href="https://doi.org/10.1016/j.rsma.2023.103319" target="_blank" rel="noopener">10.1016/j.rsma.2023.103319</a></td>
-    </tr>
-    <tr>
-      <td>2024</td>
-      <td>Challenges and strategies for SDG 14 in Brazilian ports</td>
-      <td>Azevedo, R.R.; Cunha, D.R.; Oliveira, C.B.M.; Pereira, N.N.; Lima, S.L.</td>
-      <td>Revista de Gestão e Secretariado, v.15, e4593</td>
-      <td><a href="https://doi.org/10.7769/gesec.v15i12.4593" target="_blank" rel="noopener">10.7769/gesec.v15i12.4593</a></td>
-    </tr>
-    <tr>
-      <td>2024</td>
-      <td>Sustainable Practices in Brazilian Ports: Aligning with SDGs 9, 13, and 14</td>
-      <td>Diniz, N.V.; Cunha, D.R.; Porte, M.S.; Pereira, N.N.; Oliveira, C.B.M.</td>
-      <td>RGSA (ANPAD), v.18, e09744</td>
-      <td><a href="https://doi.org/10.24857/rgsa.v18n11-096" target="_blank" rel="noopener">10.24857/rgsa.v18n11-096</a></td>
-    </tr>
-    <tr>
-      <td>2024</td>
-      <td>Adoption of Global Sustainability Frameworks in Brazilian Ports: Current Practices and Future Directions</td>
-      <td>Cunha, D.R.; Pereira, N.N.; Oliveira, C.B.M.; Porte, M.S.; Azevedo, R.R.; Fernandes, F.F.</td>
-      <td>RGSA (ANPAD), v.18, e010363</td>
-      <td><a href="https://doi.org/10.24857/rgsa.v18n12-093" target="_blank" rel="noopener">10.24857/rgsa.v18n12-093</a></td>
-    </tr>
-    <tr>
-      <td>2023</td>
-      <td>Sustainability practices for SDGs: a study of Brazilian ports</td>
-      <td>Cunha, D.R.; Pereira, N.N.; Porte, M.S.; Campos, C.R.</td>
-      <td>Environment, Development and Sustainability, v.1, p.1–22</td>
-      <td><a href="https://doi.org/10.1007/s10668-023-03126-y" target="_blank" rel="noopener">10.1007/s10668-023-03126-y</a></td>
-    </tr>
-    <tr>
-      <td>2023</td>
-      <td>Photovoltaic electronic waste in Brazil: Circular economy challenges, potential and obstacles</td>
-      <td>Sousa, N.M.; Oliveira, C.B.M.; Cunha, D.R.</td>
-      <td>Social Sciences & Humanities Open, v.7, 100456</td>
-      <td><a href="https://doi.org/10.1016/j.ssaho.2023.100456" target="_blank" rel="noopener">10.1016/j.ssaho.2023.100456</a></td>
-    </tr>
-    <tr>
-      <td>2023</td>
-      <td>Disclosure of the Sustainable Development Goals in the Maritime Industry and Port Sector</td>
-      <td>Diniz, N.V.; Cunha, D.R.; Porte, M.S.; Oliveira, C.B.M.</td>
-      <td>Revista de Gestão e Secretariado, v.14, p.8129–8149</td>
-      <td><a href="https://doi.org/10.7769/gesec.v14i5.2185" target="_blank" rel="noopener">10.7769/gesec.v14i5.2185</a></td>
-    </tr>
-    <tr>
-      <td>2023</td>
-      <td>Innovations and smart technologies at Brazilian ports</td>
-      <td>Cunha, D.R.; Cutrim, S.; Porte, M.S.; Diniz, N.V.</td>
-      <td>Revista de Gestão e Secretariado, v.14, p.7373–7390</td>
-      <td><a href="https://doi.org/10.7769/gesec.v14i5.2127" target="_blank" rel="noopener">10.7769/gesec.v14i5.2127</a></td>
-    </tr>
-    <tr>
-      <td>2023</td>
-      <td>Port sustainability initiatives: a study of Brazilian public ports</td>
-      <td>Cunha, D.R.; Pereira, N.N.; Moneva, J.M.</td>
-      <td>Revista de Gestão e Secretariado, v.14, p.12674–12693</td>
-      <td><a href="https://doi.org/10.7769/gesec.v14i8.2558" target="_blank" rel="noopener">10.7769/gesec.v14i8.2558</a></td>
-    </tr>
-    <tr>
-      <td>2023</td>
-      <td>Evidenciação das informações ambientais: um estudo com empresas do setor logístico</td>
-      <td>Reis, S.R.S.; Cunha, D.R.; Porte, M.S.</td>
-      <td>Int. Journal of Scientific Management and Tourism, v.9, p.2085–2105</td>
-      <td><a href="https://doi.org/10.55905/ijsmtv9n4-010" target="_blank" rel="noopener">10.55905/ijsmtv9n4-010</a></td>
-    </tr>
-    <tr>
-      <td>2023</td>
-      <td>Gênero na pesquisa em auditoria: uma revisão de literatura</td>
-      <td>Lima, C.B.; Porte, M.S.; Silva, A.R.; Cunha, D.R.; Diniz, N.V.</td>
-      <td>Int. Journal of Scientific Management and Tourism, v.9, p.1640–1669</td>
-      <td><a href="https://doi.org/10.55905/ijsmtv9n3-019" target="_blank" rel="noopener">10.55905/ijsmtv9n3-019</a></td>
-    </tr>
-    <tr>
-      <td>2023</td>
-      <td>Transparency and sustainability levels in port and terminal reports</td>
-      <td>Noronha, M.; Pereira, N.N.; Cunha, D.R.</td>
-      <td>Int. Journal of Scientific Management and Tourism, v.9, p.2157–2185</td>
-      <td><a href="https://doi.org/10.55905/ijsmtv9n4-013" target="_blank" rel="noopener">10.55905/ijsmtv9n4-013</a></td>
-    </tr>
-    <tr>
-      <td>2023</td>
-      <td>Información de Sostenibilidad en Gobiernos Locales de Brasil</td>
-      <td>Cunha, D.R.; Parada, F.M.; Pajares, J.H.</td>
-      <td>Revista de Gestão e Secretariado, v.14, p.12790–12810</td>
-      <td><a href="https://doi.org/10.7769/gesec.v14i8.2568" target="_blank" rel="noopener">10.7769/gesec.v14i8.2568</a></td>
-    </tr>
-  </tbody>
-</table>
-    </section>
-    
-    <section id="tab1" class="tab-content" style="display:none;">
-        <h2>cap de livros</h2>
-        <table border="1" class="dataframe cv-table">
-  <thead>
-    <tr style="text-align: right;">
-      <th>Ano</th>
-      <th>Título do Capítulo</th>
-      <th>Autores</th>
-      <th>Livro</th>
-      <th>DOI / ISBN / Site</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>2023</td>
-      <td>Análise de viabilidade do sistema de aproveitamento de água pluvial em unidade residencial</td>
-      <td>França Júnior, F.A.; Cunha, D.R.</td>
-      <td>Tópicos estratégicos portuários III, v.3, p.97–116</td>
-      <td><a href="https://www.edufma.ufma.br/index.php/produto/topicos-estrategicos-portuarios/" target="_blank" rel="noopener">https://www.edufma.ufma.br/index.php/produto/topicos-estrategicos-portuarios/</a></td>
-    </tr>
-    <tr>
-      <td>2023</td>
-      <td>Gerenciamento de resíduos nos portos públicos brasileiros</td>
-      <td>Lobato, L.P.; Cunha, D.R.</td>
-      <td>Tópicos estratégicos portuários III, v.3, p.188–196</td>
-      <td><a href="https://www.edufma.ufma.br/index.php/produto/topicos-estrategicos-portuarios/" target="_blank" rel="noopener">https://www.edufma.ufma.br/index.php/produto/topicos-estrategicos-portuarios/</a></td>
-    </tr>
-    <tr>
-      <td>2023</td>
-      <td>Gerenciamento de resíduos sólidos nos portos públicos nordestinos</td>
-      <td>Pereira, E.B.C.; Cunha, D.R.</td>
-      <td>Tópicos estratégicos portuários III, v.3, p.65–80</td>
-      <td><a href="https://www.edufma.ufma.br/index.php/produto/topicos-estrategicos-portuarios/" target="_blank" rel="noopener">https://www.edufma.ufma.br/index.php/produto/topicos-estrategicos-portuarios/</a></td>
-    </tr>
-    <tr>
-      <td>2023</td>
-      <td>Inovações no setor portuário</td>
-      <td>Couto, E.D.; Cunha, D.R.</td>
-      <td>Tópicos estratégicos portuários III, v.3, p.81–96</td>
-      <td><a href="https://www.edufma.ufma.br/index.php/produto/topicos-estrategicos-portuarios/" target="_blank" rel="noopener">https://www.edufma.ufma.br/index.php/produto/topicos-estrategicos-portuarios/</a></td>
-    </tr>
-    <tr>
-      <td>2023</td>
-      <td>Mulheres a bordo: a sustentabilidade social e a presença da mulher nos portos</td>
-      <td>Ferreira, M.L.; Cunha, D.R.</td>
-      <td>Tópicos estratégicos portuários III, v.3, p.210–223</td>
-      <td><a href="https://www.edufma.ufma.br/index.php/produto/topicos-estrategicos-portuarios/" target="_blank" rel="noopener">https://www.edufma.ufma.br/index.php/produto/topicos-estrategicos-portuarios/</a></td>
-    </tr>
-    <tr>
-      <td>2022</td>
-      <td>A evidenciação da informação de sustentabilidade nos portos brasileiros</td>
-      <td>Cunha, D.R.</td>
-      <td>Manifesto: ESG Portuário, p.79–88</td>
-      <td><a href="https://labportos.log.br/assets/Manifesto_ESG_Portuario.pdf" target="_blank" rel="noopener">https://labportos.log.br/assets/Manifesto_ESG_Portuario.pdf</a></td>
-    </tr>
-  </tbody>
-</table>
-    </section>
-    
-    <section id="tab2" class="tab-content" style="display:none;">
-        <h2>anais de congressos</h2>
-        <table border="1" class="dataframe cv-table">
-  <thead>
-    <tr style="text-align: right;">
-      <th>Ano</th>
-      <th>Título</th>
-      <th>Autores</th>
-      <th>Evento / Local</th>
-      <th>Site</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>2023</td>
-      <td>INSIGHTS PARA A CONSTRUÇÃO DO ÍNDICE DE SUSTENTABILIDADE PORTUÁRIA</td>
-      <td>Cunha, D.R.; Porte, M.S.; Oliveira, C.B.M.</td>
-      <td>X CIDESPORT, Florianópolis</td>
-      <td><a href="https://2023.cidesport.com/wp-content/uploads/2023/11/Anais_2023.pdf" target="_blank" rel="noopener">https://2023.cidesport.com/wp-content/uploads/2023/11/Anais_2023.pdf</a></td>
-    </tr>
-    <tr>
-      <td>2023</td>
-      <td>PROJETOS SUSTENTÁVEIS E DE ESG NO SISTEMA PORTUÁRIO BRASILEIRO</td>
-      <td>Cutrim, S.; Robles, L.; Barbosa, M.M.R.C.; Cunha, D.R.; Teixeira, T.G.</td>
-      <td>X CIDESPORT, Florianópolis</td>
-      <td><a href="https://2023.cidesport.com/wp-content/uploads/2023/11/Anais_2023.pdf" target="_blank" rel="noopener">https://2023.cidesport.com/wp-content/uploads/2023/11/Anais_2023.pdf</a></td>
-    </tr>
-    <tr>
-      <td>2022</td>
-      <td>MERCADO DE TRABALHO NO SETOR PORTUÁRIO BRASILEIRO E MARANHENSE</td>
-      <td>Teixeira, T.G.; Cutrim, S.; Robles, L.; Cunha, D.R.; Oliveira, F.J.B.</td>
-      <td>IX Congresso Internacional de Desempenho Portuário, Florianópolis</td>
-      <td><a href="https://2022.cidesport.com/wp-content/uploads/2022/11/Anais-2022.pdf" target="_blank" rel="noopener">https://2022.cidesport.com/wp-content/uploads/2022/11/Anais-2022.pdf</a></td>
-    </tr>
-    <tr>
-      <td>2021</td>
-      <td>EVIDENCIAÇÃO DAS INFORMAÇÕES AMBIENTAIS: UMA ANÁLISE DAS DEMONSTRAÇÕES CONTÁBEIS DE EMPRESAS DO SETOR LOGÍSTICO</td>
-      <td>Cunha, D.R.; Reis, S.R.S.</td>
-      <td>IV Simpósio Internacional de Gestão Portuária</td>
-      <td>—</td>
-    </tr>
-    <tr>
-      <td>2021</td>
-      <td>INFORMACIÓN DE SOSTENIBILIDAD EN GOBIERNOS LOCALES DE BRASIL</td>
-      <td>Cunha, D.R.; Parada, F.M.</td>
-      <td>VII Conferência Sul-Americana de Contabilidade Ambiental (CSCA), online</td>
-      <td><a href="http://www.csca.net.br" target="_blank" rel="noopener">http://www.csca.net.br</a></td>
-    </tr>
-    <tr>
-      <td>2021</td>
-      <td>SUSTENTABILIDADE E ECO-INOVAÇÕES: UM ESTUDO NOS PORTOS PÚBLICOS BRASILEIROS</td>
-      <td>Cunha, D.R.; Costa, C.</td>
-      <td>IV Simpósio Internacional de Gestão Portuária</td>
-      <td>—</td>
-    </tr>
-    <tr>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td><a href="https://cidesport.com/wp-content/uploads/2024/07/Anais_integra_v2.pdf" target="_blank" rel="noopener">https://cidesport.com/wp-content/uploads/2024/07/Anais_integra_v2.pdf</a></td>
-    </tr>
-  </tbody>
-</table>
-    </section>
-    
-    <section id="tab3" class="tab-content" style="display:none;">
-        <h2>producao técnica</h2>
-        <table border="1" class="dataframe cv-table">
-  <thead>
-    <tr style="text-align: right;">
-      <th>Ano</th>
-      <th>Título</th>
-      <th>Autoria / Parcerias</th>
-      <th>Site</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>2025</td>
-      <td>Assistente de Mineração de Texto</td>
-      <td>Cunha, D.R.</td>
-      <td><a href="https://darlianecunha.github.io/portfolioferramentas/" target="_blank" rel="noopener">https://darlianecunha.github.io/portfolioferramentas/</a> • <a href="https://textmininginput.streamlit.app/" target="_blank" rel="noopener">https://textmininginput.streamlit.app/</a></td>
-    </tr>
-    <tr>
-      <td>2025</td>
-      <td>Atributos ODS – Setor Portuário</td>
-      <td>Cunha, D.R.; Costa, M.D.C.; Oliveira, C.B.M.</td>
-      <td><a href="https://darlianecunha.github.io/portfolioferramentas/" target="_blank" rel="noopener">https://darlianecunha.github.io/portfolioferramentas/</a> • <a href="https://modeloods-ff6md9cyz5pfwinhzlupgm.streamlit.app/" target="_blank" rel="noopener">https://modeloods-ff6md9cyz5pfwinhzlupgm.streamlit.app/</a></td>
-    </tr>
-    <tr>
-  </tbody>
-</table>
-    </section>
-    
-    <section id="tab4" class="tab-content" style="display:none;">
-        <h2>Sugestões</h2>
-        <table border="1" class="dataframe cv-table">
-  <thead>
-     </tr>
-    <tr>
-      <td>portfólio do Grupo Banco Mundial</td>
-      <td>Site</td>
-      <td><a href="https://brasilaberto.worldbank.org/pt/portfolio" target="_blank" rel="noopener">https://brasilaberto.worldbank.org/pt/portfolio</a></td>
-    </tr>
-    <tr>
-      <td>portfólio do Grupo Banco Mundial</td>
-      <td>Site</td>
-      <td><a href="https://projects.worldbank.org/en/projects-operations/projects-list?os=0" target="_blank" rel="noopener">https://projects.worldbank.org/en/projects-operations/projects-list?os=0</a></td>
-    </tr>
-    <tr>
-      <td>Ranking ODS paises-Dashboards</td>
-      <td>Site</td>
-      <td><a href="https://sdgtransformationcenter.org/reports/sustainable-development-report-2025" target="_blank" rel="noopener">https://sdgtransformationcenter.org/reports/sustainable-development-report-2025</a></td>
-    </tr>
-    <tr>
-      <td>Ranking ODS paises-Dashboards</td>
-      <td>Site</td>
-      <td><a href="https://dashboards.sdgindex.org/map/" target="_blank" rel="noopener">https://dashboards.sdgindex.org/map/</a></td>
-    </tr>
-    <tr>
-      <td>GRI</td>
-      <td>Site</td>
-      <td><a href="https://www.globalreporting.org/how-to-use-the-gri-standards/gri-standards-portuguese-translations/" target="_blank" rel="noopener">https://www.globalreporting.org/how-to-use-the-gri-standards/gri-standards-portuguese-translations/</a></td>
-    </tr>
-    <tr>
-      <td>Publicacoes Naçoes Unidas PT</td>
-      <td>Site</td>
-      <td><a href="https://brasil.un.org/pt-br/resources/publications" target="_blank" rel="noopener">https://brasil.un.org/pt-br/resources/publications</a></td>
-    </tr>
-    <tr>
-      <td>Publicacoes Banco Mundial</td>
-      <td>Site</td>
-      <td><a href="https://openknowledge.worldbank.org/communities/db684e75-3a3f-5b5e-8efb-605263d0ae29" target="_blank" rel="noopener">https://openknowledge.worldbank.org/communities/db684e75-3a3f-5b5e-8efb-605263d0ae29</a></td>
-    </tr>
-    <tr>
-      <td>Prioridades dos Portos Europeus</td>
-      <td>Site</td>
-      <td><a href="https://www.espo.be/media/ESPO%20Environmental%20Report%202024.pdf" target="_blank" rel="noopener">https://www.espo.be/media/ESPO%20Environmental%20Report%202024.pdf</a></td>
-    </tr>
-    <tr>
-      <td>Programa Brasileiro GHG Protocol </td>
-      <td>Site</td>
-      <td><a href="https://eaesp.fgv.br/centros/centro-estudos-sustentabilidade/projetos/programa-brasileiro-ghg-protocol" target="_blank" rel="noopener">https://eaesp.fgv.br/centros/centro-estudos-sustentabilidade/projetos/programa-brasileiro-ghg-protocol</a></td>
-       </tr>
-      <tr>
-      <td>Reportagem sobre China</td>
-      <td>Vídeo</td>
-      <td><a href="https://www.youtube.com/watch?v=3esZkmffbOI" target="_blank" rel="noopener">https://www.youtube.com/watch?v=3esZkmffbOI</a></td>
-    </tr>
-    <tr>
-      <td>Riscos Globais</td>
-      <td>Fórum Econômico Mundial</td>
-      <td><a href="https://www.weforum.org/publications/global-risks-report-2025/" target="_blank" rel="noopener">https://www.weforum.org/publications/global-risks-report-2025/</a></td>
-    </tr>
-    <tr>
-      <td>Cidades Sustentáveis</td>
-      <td>Modelo Brasil</td>
-      <td><a href="https://idsc.cidadessustentaveis.org.br/" target="_blank" rel="noopener">https://idsc.cidadessustentaveis.org.br/</a></td>
-    </tr>
-    <tr>
-      <td>IDH- Cidades brasileiras</td>
-      <td>Modelo</td>
-      <td><a href="http://www.atlasbrasil.org.br/ranking" target="_blank" rel="noopener">http://www.atlasbrasil.org.br/ranking</a></td>
-    </tr>
-    <tr>
-      <td>Hub Pecém</td>
-      <td>Vídeo</td>
-      <td><a href="https://www.youtube.com/watch?v=b9Lsn5tqbXk" target="_blank" rel="noopener">https://www.youtube.com/watch?v=b9Lsn5tqbXk</a></td>
-    </tr>
-    <tr>
-      <td>Hub Pecém</td>
-      <td>Vídeo</td>
-      <td><a href="https://www.youtube.com/watch?v=PnOWZ5oTu6Q" target="_blank" rel="noopener">https://www.youtube.com/watch?v=PnOWZ5oTu6Q</a></td>
-    </tr>
-    <tr>
-      <td>Vale (máquina remotas)</td>
-      <td>Vídeo</td>
-      <td><a href="https://www.youtube.com/watch?v=j3T2Sfr6bT8" target="_blank" rel="noopener">https://www.youtube.com/watch?v=j3T2Sfr6bT8</a></td>
-    </tr>
-    <tr>
-      <td>Porto de Rotterdam</td>
-      <td>Vídeo</td>
-      <td><a href="https://www.youtube.com/watch?v=JVxIWqgPofg" target="_blank" rel="noopener">https://www.youtube.com/watch?v=JVxIWqgPofg</a></td>
-    </tr>
-    <tr>
-      <td>Relatórios de Sustentabilidade Portos Brasil</td>
-      <td>Link google</td>
-      <td><a href="https://drive.google.com/drive/folders/14awutHfCbnX9GCSgKSiscs3sgyriMlB7" target="_blank" rel="noopener">https://drive.google.com/drive/folders/14awutHfCbnX9GCSgKSiscs3sgyriMlB7</a></td>
-    </tr>
-    <tr>
-      <td>Relatórios COP</td>
-      <td>Link google</td>
-      <td><a href="https://drive.google.com/drive/folders/1lSrBzqIm7hl31-7ajm16_Pp2Hk6X98Fi" target="_blank" rel="noopener">https://drive.google.com/drive/folders/1lSrBzqIm7hl31-7ajm16_Pp2Hk6X98Fi</a></td>
-    </tr>
-    <tr>
-      <td>Artigos do meu grupo</td>
-      <td>Link google</td>
-      <td><a href="https://drive.google.com/drive/folders/1Ua1eP73GhP6Ei3BgtFGl1HvFPD9l8OB4" target="_blank" rel="noopener">https://drive.google.com/drive/folders/1Ua1eP73GhP6Ei3BgtFGl1HvFPD9l8OB4</a></td>
-    </tr>
-  </tbody>
-</table>
-    </section>
-    
-  </div>
-
+<div class="container">
+<header class="header">
+<h1 class="title">Darliane Ribeiro Cunha</h1>
+<p class="subtitle">Currículo — Publicações e Produções</p>
+<div class="tabs">
+<button class="tab-btn active" data-target="tab0">Artigos</button>
+<button class="tab-btn" data-target="tab1">Capítulos de livros</button>
+<button class="tab-btn" data-target="tab2">Anais de congressos</button>
+<button class="tab-btn" data-target="tab3">Produção técnica</button>
+<button class="tab-btn" data-target="tab4">Sugestões</button>
+</div>
+</header>
+<section class="tab-content" id="tab0">
+<h2>Artigos</h2>
+<div class="cv-list"><article class="cv-card"><div class="cv-item"><div class="label">Ano</div><div class="value">2025</div></div><div class="cv-item"><div class="label">Título</div><div class="value">Strategies For Decarbonisation in The Port and Maritime Sector: Key Challenges and Leading Ports</div></div><div class="cv-item"><div class="label">Autores</div><div class="value">Cunha, D.R.; Oliveira, C.B.M.; Porte, M.S.; Cutrim, S.S.; Pereira, N.N.</div></div><div class="cv-item"><div class="label">Periódico</div><div class="value">RGSA (ANPAD), v.19, e011963</div></div><div class="cv-item"><div class="label">DOI</div><div class="value"><a href="https://doi.org/10.24857/rgsa.v19n4-071" rel="noopener" target="_blank">10.24857/rgsa.v19n4-071</a></div></div></article><article class="cv-card"><div class="cv-item"><div class="label">Ano</div><div class="value">2025</div></div><div class="cv-item"><div class="label">Título</div><div class="value">SDG attributes: A sustainability assessment framework for Brazilian ports</div></div><div class="cv-item"><div class="label">Autores</div><div class="value">Cunha, D.R.; Costa, M.D.C.; Oliveira, C.B.M.; Pereira, N.N.</div></div><div class="cv-item"><div class="label">Periódico</div><div class="value">Marine Policy, v.181, p.106841</div></div><div class="cv-item"><div class="label">DOI</div><div class="value"><a href="https://doi.org/10.1016/j.marpol.2025.106841" rel="noopener" target="_blank">10.1016/j.marpol.2025.106841</a></div></div></article><article class="cv-card"><div class="cv-item"><div class="label">Ano</div><div class="value">2024</div></div><div class="cv-item"><div class="label">Título</div><div class="value">A bibliometric analysis of sustainable development goals in the maritime industry and port sector</div></div><div class="cv-item"><div class="label">Autores</div><div class="value">Diniz, N.V.; Cunha, D.R.; Porte, M.S.; Oliveira, C.B.M.; Fernandes, F.F.</div></div><div class="cv-item"><div class="label">Periódico</div><div class="value">Regional Studies in Marine Science, v.69, 103319</div></div><div class="cv-item"><div class="label">DOI</div><div class="value"><a href="https://doi.org/10.1016/j.rsma.2023.103319" rel="noopener" target="_blank">10.1016/j.rsma.2023.103319</a></div></div></article><article class="cv-card"><div class="cv-item"><div class="label">Ano</div><div class="value">2024</div></div><div class="cv-item"><div class="label">Título</div><div class="value">Challenges and strategies for SDG 14 in Brazilian ports</div></div><div class="cv-item"><div class="label">Autores</div><div class="value">Azevedo, R.R.; Cunha, D.R.; Oliveira, C.B.M.; Pereira, N.N.; Lima, S.L.</div></div><div class="cv-item"><div class="label">Periódico</div><div class="value">Revista de Gestão e Secretariado, v.15, e4593</div></div><div class="cv-item"><div class="label">DOI</div><div class="value"><a href="https://doi.org/10.7769/gesec.v15i12.4593" rel="noopener" target="_blank">10.7769/gesec.v15i12.4593</a></div></div></article><article class="cv-card"><div class="cv-item"><div class="label">Ano</div><div class="value">2024</div></div><div class="cv-item"><div class="label">Título</div><div class="value">Sustainable Practices in Brazilian Ports: Aligning with SDGs 9, 13, and 14</div></div><div class="cv-item"><div class="label">Autores</div><div class="value">Diniz, N.V.; Cunha, D.R.; Porte, M.S.; Pereira, N.N.; Oliveira, C.B.M.</div></div><div class="cv-item"><div class="label">Periódico</div><div class="value">RGSA (ANPAD), v.18, e09744</div></div><div class="cv-item"><div class="label">DOI</div><div class="value"><a href="https://doi.org/10.24857/rgsa.v18n11-096" rel="noopener" target="_blank">10.24857/rgsa.v18n11-096</a></div></div></article><article class="cv-card"><div class="cv-item"><div class="label">Ano</div><div class="value">2024</div></div><div class="cv-item"><div class="label">Título</div><div class="value">Adoption of Global Sustainability Frameworks in Brazilian Ports: Current Practices and Future Directions</div></div><div class="cv-item"><div class="label">Autores</div><div class="value">Cunha, D.R.; Pereira, N.N.; Oliveira, C.B.M.; Porte, M.S.; Azevedo, R.R.; Fernandes, F.F.</div></div><div class="cv-item"><div class="label">Periódico</div><div class="value">RGSA (ANPAD), v.18, e010363</div></div><div class="cv-item"><div class="label">DOI</div><div class="value"><a href="https://doi.org/10.24857/rgsa.v18n12-093" rel="noopener" target="_blank">10.24857/rgsa.v18n12-093</a></div></div></article><article class="cv-card"><div class="cv-item"><div class="label">Ano</div><div class="value">2023</div></div><div class="cv-item"><div class="label">Título</div><div class="value">Sustainability practices for SDGs: a study of Brazilian ports</div></div><div class="cv-item"><div class="label">Autores</div><div class="value">Cunha, D.R.; Pereira, N.N.; Porte, M.S.; Campos, C.R.</div></div><div class="cv-item"><div class="label">Periódico</div><div class="value">Environment, Development and Sustainability, v.1, p.1–22</div></div><div class="cv-item"><div class="label">DOI</div><div class="value"><a href="https://doi.org/10.1007/s10668-023-03126-y" rel="noopener" target="_blank">10.1007/s10668-023-03126-y</a></div></div></article><article class="cv-card"><div class="cv-item"><div class="label">Ano</div><div class="value">2023</div></div><div class="cv-item"><div class="label">Título</div><div class="value">Photovoltaic electronic waste in Brazil: Circular economy challenges, potential and obstacles</div></div><div class="cv-item"><div class="label">Autores</div><div class="value">Sousa, N.M.; Oliveira, C.B.M.; Cunha, D.R.</div></div><div class="cv-item"><div class="label">Periódico</div><div class="value">Social Sciences &amp; Humanities Open, v.7, 100456</div></div><div class="cv-item"><div class="label">DOI</div><div class="value"><a href="https://doi.org/10.1016/j.ssaho.2023.100456" rel="noopener" target="_blank">10.1016/j.ssaho.2023.100456</a></div></div></article><article class="cv-card"><div class="cv-item"><div class="label">Ano</div><div class="value">2023</div></div><div class="cv-item"><div class="label">Título</div><div class="value">Disclosure of the Sustainable Development Goals in the Maritime Industry and Port Sector</div></div><div class="cv-item"><div class="label">Autores</div><div class="value">Diniz, N.V.; Cunha, D.R.; Porte, M.S.; Oliveira, C.B.M.</div></div><div class="cv-item"><div class="label">Periódico</div><div class="value">Revista de Gestão e Secretariado, v.14, p.8129–8149</div></div><div class="cv-item"><div class="label">DOI</div><div class="value"><a href="https://doi.org/10.7769/gesec.v14i5.2185" rel="noopener" target="_blank">10.7769/gesec.v14i5.2185</a></div></div></article><article class="cv-card"><div class="cv-item"><div class="label">Ano</div><div class="value">2023</div></div><div class="cv-item"><div class="label">Título</div><div class="value">Innovations and smart technologies at Brazilian ports</div></div><div class="cv-item"><div class="label">Autores</div><div class="value">Cunha, D.R.; Cutrim, S.; Porte, M.S.; Diniz, N.V.</div></div><div class="cv-item"><div class="label">Periódico</div><div class="value">Revista de Gestão e Secretariado, v.14, p.7373–7390</div></div><div class="cv-item"><div class="label">DOI</div><div class="value"><a href="https://doi.org/10.7769/gesec.v14i5.2127" rel="noopener" target="_blank">10.7769/gesec.v14i5.2127</a></div></div></article><article class="cv-card"><div class="cv-item"><div class="label">Ano</div><div class="value">2023</div></div><div class="cv-item"><div class="label">Título</div><div class="value">Port sustainability initiatives: a study of Brazilian public ports</div></div><div class="cv-item"><div class="label">Autores</div><div class="value">Cunha, D.R.; Pereira, N.N.; Moneva, J.M.</div></div><div class="cv-item"><div class="label">Periódico</div><div class="value">Revista de Gestão e Secretariado, v.14, p.12674–12693</div></div><div class="cv-item"><div class="label">DOI</div><div class="value"><a href="https://doi.org/10.7769/gesec.v14i8.2558" rel="noopener" target="_blank">10.7769/gesec.v14i8.2558</a></div></div></article><article class="cv-card"><div class="cv-item"><div class="label">Ano</div><div class="value">2023</div></div><div class="cv-item"><div class="label">Título</div><div class="value">Evidenciação das informações ambientais: um estudo com empresas do setor logístico</div></div><div class="cv-item"><div class="label">Autores</div><div class="value">Reis, S.R.S.; Cunha, D.R.; Porte, M.S.</div></div><div class="cv-item"><div class="label">Periódico</div><div class="value">Int. Journal of Scientific Management and Tourism, v.9, p.2085–2105</div></div><div class="cv-item"><div class="label">DOI</div><div class="value"><a href="https://doi.org/10.55905/ijsmtv9n4-010" rel="noopener" target="_blank">10.55905/ijsmtv9n4-010</a></div></div></article><article class="cv-card"><div class="cv-item"><div class="label">Ano</div><div class="value">2023</div></div><div class="cv-item"><div class="label">Título</div><div class="value">Gênero na pesquisa em auditoria: uma revisão de literatura</div></div><div class="cv-item"><div class="label">Autores</div><div class="value">Lima, C.B.; Porte, M.S.; Silva, A.R.; Cunha, D.R.; Diniz, N.V.</div></div><div class="cv-item"><div class="label">Periódico</div><div class="value">Int. Journal of Scientific Management and Tourism, v.9, p.1640–1669</div></div><div class="cv-item"><div class="label">DOI</div><div class="value"><a href="https://doi.org/10.55905/ijsmtv9n3-019" rel="noopener" target="_blank">10.55905/ijsmtv9n3-019</a></div></div></article><article class="cv-card"><div class="cv-item"><div class="label">Ano</div><div class="value">2023</div></div><div class="cv-item"><div class="label">Título</div><div class="value">Transparency and sustainability levels in port and terminal reports</div></div><div class="cv-item"><div class="label">Autores</div><div class="value">Noronha, M.; Pereira, N.N.; Cunha, D.R.</div></div><div class="cv-item"><div class="label">Periódico</div><div class="value">Int. Journal of Scientific Management and Tourism, v.9, p.2157–2185</div></div><div class="cv-item"><div class="label">DOI</div><div class="value"><a href="https://doi.org/10.55905/ijsmtv9n4-013" rel="noopener" target="_blank">10.55905/ijsmtv9n4-013</a></div></div></article><article class="cv-card"><div class="cv-item"><div class="label">Ano</div><div class="value">2023</div></div><div class="cv-item"><div class="label">Título</div><div class="value">Información de Sostenibilidad en Gobiernos Locales de Brasil</div></div><div class="cv-item"><div class="label">Autores</div><div class="value">Cunha, D.R.; Parada, F.M.; Pajares, J.H.</div></div><div class="cv-item"><div class="label">Periódico</div><div class="value">Revista de Gestão e Secretariado, v.14, p.12790–12810</div></div><div class="cv-item"><div class="label">DOI</div><div class="value"><a href="https://doi.org/10.7769/gesec.v14i8.2568" rel="noopener" target="_blank">10.7769/gesec.v14i8.2568</a></div></div></article></div>
+</section>
+<section class="tab-content" id="tab1" style="display:none;">
+<h2>Capítulos de livros</h2>
+<div class="cv-list"><article class="cv-card"><div class="cv-item"><div class="label">Ano</div><div class="value">2023</div></div><div class="cv-item"><div class="label">Título do Capítulo</div><div class="value">Análise de viabilidade do sistema de aproveitamento de água pluvial em unidade residencial</div></div><div class="cv-item"><div class="label">Autores</div><div class="value">França Júnior, F.A.; Cunha, D.R.</div></div><div class="cv-item"><div class="label">Livro</div><div class="value">Tópicos estratégicos portuários III, v.3, p.97–116</div></div><div class="cv-item"><div class="label">DOI / ISBN / Site</div><div class="value"><a href="https://www.edufma.ufma.br/index.php/produto/topicos-estrategicos-portuarios/" rel="noopener" target="_blank">https://www.edufma.ufma.br/index.php/produto/topicos-estrategicos-portuarios/</a></div></div></article><article class="cv-card"><div class="cv-item"><div class="label">Ano</div><div class="value">2023</div></div><div class="cv-item"><div class="label">Título do Capítulo</div><div class="value">Gerenciamento de resíduos nos portos públicos brasileiros</div></div><div class="cv-item"><div class="label">Autores</div><div class="value">Lobato, L.P.; Cunha, D.R.</div></div><div class="cv-item"><div class="label">Livro</div><div class="value">Tópicos estratégicos portuários III, v.3, p.188–196</div></div><div class="cv-item"><div class="label">DOI / ISBN / Site</div><div class="value"><a href="https://www.edufma.ufma.br/index.php/produto/topicos-estrategicos-portuarios/" rel="noopener" target="_blank">https://www.edufma.ufma.br/index.php/produto/topicos-estrategicos-portuarios/</a></div></div></article><article class="cv-card"><div class="cv-item"><div class="label">Ano</div><div class="value">2023</div></div><div class="cv-item"><div class="label">Título do Capítulo</div><div class="value">Gerenciamento de resíduos sólidos nos portos públicos nordestinos</div></div><div class="cv-item"><div class="label">Autores</div><div class="value">Pereira, E.B.C.; Cunha, D.R.</div></div><div class="cv-item"><div class="label">Livro</div><div class="value">Tópicos estratégicos portuários III, v.3, p.65–80</div></div><div class="cv-item"><div class="label">DOI / ISBN / Site</div><div class="value"><a href="https://www.edufma.ufma.br/index.php/produto/topicos-estrategicos-portuarios/" rel="noopener" target="_blank">https://www.edufma.ufma.br/index.php/produto/topicos-estrategicos-portuarios/</a></div></div></article><article class="cv-card"><div class="cv-item"><div class="label">Ano</div><div class="value">2023</div></div><div class="cv-item"><div class="label">Título do Capítulo</div><div class="value">Inovações no setor portuário</div></div><div class="cv-item"><div class="label">Autores</div><div class="value">Couto, E.D.; Cunha, D.R.</div></div><div class="cv-item"><div class="label">Livro</div><div class="value">Tópicos estratégicos portuários III, v.3, p.81–96</div></div><div class="cv-item"><div class="label">DOI / ISBN / Site</div><div class="value"><a href="https://www.edufma.ufma.br/index.php/produto/topicos-estrategicos-portuarios/" rel="noopener" target="_blank">https://www.edufma.ufma.br/index.php/produto/topicos-estrategicos-portuarios/</a></div></div></article><article class="cv-card"><div class="cv-item"><div class="label">Ano</div><div class="value">2023</div></div><div class="cv-item"><div class="label">Título do Capítulo</div><div class="value">Mulheres a bordo: a sustentabilidade social e a presença da mulher nos portos</div></div><div class="cv-item"><div class="label">Autores</div><div class="value">Ferreira, M.L.; Cunha, D.R.</div></div><div class="cv-item"><div class="label">Livro</div><div class="value">Tópicos estratégicos portuários III, v.3, p.210–223</div></div><div class="cv-item"><div class="label">DOI / ISBN / Site</div><div class="value"><a href="https://www.edufma.ufma.br/index.php/produto/topicos-estrategicos-portuarios/" rel="noopener" target="_blank">https://www.edufma.ufma.br/index.php/produto/topicos-estrategicos-portuarios/</a></div></div></article><article class="cv-card"><div class="cv-item"><div class="label">Ano</div><div class="value">2022</div></div><div class="cv-item"><div class="label">Título do Capítulo</div><div class="value">A evidenciação da informação de sustentabilidade nos portos brasileiros</div></div><div class="cv-item"><div class="label">Autores</div><div class="value">Cunha, D.R.</div></div><div class="cv-item"><div class="label">Livro</div><div class="value">Manifesto: ESG Portuário, p.79–88</div></div><div class="cv-item"><div class="label">DOI / ISBN / Site</div><div class="value"><a href="https://labportos.log.br/assets/Manifesto_ESG_Portuario.pdf" rel="noopener" target="_blank">https://labportos.log.br/assets/Manifesto_ESG_Portuario.pdf</a></div></div></article></div>
+</section>
+<section class="tab-content" id="tab2" style="display:none;">
+<h2>Anais de congressos</h2>
+<div class="cv-list"><article class="cv-card"><div class="cv-item"><div class="label">Ano</div><div class="value">2023</div></div><div class="cv-item"><div class="label">Título</div><div class="value">INSIGHTS PARA A CONSTRUÇÃO DO ÍNDICE DE SUSTENTABILIDADE PORTUÁRIA</div></div><div class="cv-item"><div class="label">Autores</div><div class="value">Cunha, D.R.; Porte, M.S.; Oliveira, C.B.M.</div></div><div class="cv-item"><div class="label">Evento / Local</div><div class="value">X CIDESPORT, Florianópolis</div></div><div class="cv-item"><div class="label">Site</div><div class="value"><a href="https://2023.cidesport.com/wp-content/uploads/2023/11/Anais_2023.pdf" rel="noopener" target="_blank">https://2023.cidesport.com/wp-content/uploads/2023/11/Anais_2023.pdf</a></div></div></article><article class="cv-card"><div class="cv-item"><div class="label">Ano</div><div class="value">2023</div></div><div class="cv-item"><div class="label">Título</div><div class="value">PROJETOS SUSTENTÁVEIS E DE ESG NO SISTEMA PORTUÁRIO BRASILEIRO</div></div><div class="cv-item"><div class="label">Autores</div><div class="value">Cutrim, S.; Robles, L.; Barbosa, M.M.R.C.; Cunha, D.R.; Teixeira, T.G.</div></div><div class="cv-item"><div class="label">Evento / Local</div><div class="value">X CIDESPORT, Florianópolis</div></div><div class="cv-item"><div class="label">Site</div><div class="value"><a href="https://2023.cidesport.com/wp-content/uploads/2023/11/Anais_2023.pdf" rel="noopener" target="_blank">https://2023.cidesport.com/wp-content/uploads/2023/11/Anais_2023.pdf</a></div></div></article><article class="cv-card"><div class="cv-item"><div class="label">Ano</div><div class="value">2022</div></div><div class="cv-item"><div class="label">Título</div><div class="value">MERCADO DE TRABALHO NO SETOR PORTUÁRIO BRASILEIRO E MARANHENSE</div></div><div class="cv-item"><div class="label">Autores</div><div class="value">Teixeira, T.G.; Cutrim, S.; Robles, L.; Cunha, D.R.; Oliveira, F.J.B.</div></div><div class="cv-item"><div class="label">Evento / Local</div><div class="value">IX Congresso Internacional de Desempenho Portuário, Florianópolis</div></div><div class="cv-item"><div class="label">Site</div><div class="value"><a href="https://2022.cidesport.com/wp-content/uploads/2022/11/Anais-2022.pdf" rel="noopener" target="_blank">https://2022.cidesport.com/wp-content/uploads/2022/11/Anais-2022.pdf</a></div></div></article><article class="cv-card"><div class="cv-item"><div class="label">Ano</div><div class="value">2021</div></div><div class="cv-item"><div class="label">Título</div><div class="value">EVIDENCIAÇÃO DAS INFORMAÇÕES AMBIENTAIS: UMA ANÁLISE DAS DEMONSTRAÇÕES CONTÁBEIS DE EMPRESAS DO SETOR LOGÍSTICO</div></div><div class="cv-item"><div class="label">Autores</div><div class="value">Cunha, D.R.; Reis, S.R.S.</div></div><div class="cv-item"><div class="label">Evento / Local</div><div class="value">IV Simpósio Internacional de Gestão Portuária</div></div><div class="cv-item"><div class="label">Site</div><div class="value">—</div></div></article><article class="cv-card"><div class="cv-item"><div class="label">Ano</div><div class="value">2021</div></div><div class="cv-item"><div class="label">Título</div><div class="value">INFORMACIÓN DE SOSTENIBILIDAD EN GOBIERNOS LOCALES DE BRASIL</div></div><div class="cv-item"><div class="label">Autores</div><div class="value">Cunha, D.R.; Parada, F.M.</div></div><div class="cv-item"><div class="label">Evento / Local</div><div class="value">VII Conferência Sul-Americana de Contabilidade Ambiental (CSCA), online</div></div><div class="cv-item"><div class="label">Site</div><div class="value"><a href="http://www.csca.net.br" rel="noopener" target="_blank">http://www.csca.net.br</a></div></div></article><article class="cv-card"><div class="cv-item"><div class="label">Ano</div><div class="value">2021</div></div><div class="cv-item"><div class="label">Título</div><div class="value">SUSTENTABILIDADE E ECO-INOVAÇÕES: UM ESTUDO NOS PORTOS PÚBLICOS BRASILEIROS</div></div><div class="cv-item"><div class="label">Autores</div><div class="value">Cunha, D.R.; Costa, C.</div></div><div class="cv-item"><div class="label">Evento / Local</div><div class="value">IV Simpósio Internacional de Gestão Portuária</div></div><div class="cv-item"><div class="label">Site</div><div class="value">—</div></div></article><article class="cv-card"><div class="cv-item"><div class="label">Ano</div><div class="value"></div></div><div class="cv-item"><div class="label">Título</div><div class="value"></div></div><div class="cv-item"><div class="label">Autores</div><div class="value"></div></div><div class="cv-item"><div class="label">Evento / Local</div><div class="value"></div></div><div class="cv-item"><div class="label">Site</div><div class="value"><a href="https://cidesport.com/wp-content/uploads/2024/07/Anais_integra_v2.pdf" rel="noopener" target="_blank">https://cidesport.com/wp-content/uploads/2024/07/Anais_integra_v2.pdf</a></div></div></article><article class="cv-card"><div class="cv-item"><div class="label">Ano</div><div class="value">2024</div></div><div class="cv-item"><div class="label">Título</div><div class="value">ESTIMATIVA DAS EMISSÕES DE DIÓXIDO DE CARBONO DE NAVIOS ATRACADOS: ESTUDO DE CASO NO PORTO DO ITAQUI</div></div><div class="cv-item"><div class="label">Autores</div><div class="value">Santos, V.R.P.; Oliveira, C.B.M.; Cunha, D.R.</div></div><div class="cv-item"><div class="label">Evento / Local</div><div class="value">XI CIDESPORT, Florianópolis</div></div><div class="cv-item"><div class="label">Site</div><div class="value"><a href="https://cidesport.com/wp-content/uploads/2024/07/Anais_integra_v2.pdf" rel="noopener" target="_blank">https://cidesport.com/wp-content/uploads/2024/07/Anais_integra_v2.pdf</a></div></div></article><article class="cv-card"><div class="cv-item"><div class="label">Ano</div><div class="value">2024</div></div><div class="cv-item"><div class="label">Título</div><div class="value">IMPLEMENTAÇÃO DE SISTEMA DE MONITORAMENTO DE EMISSÃO DE CO2 PELOS NAVIOS ENQUANTO ATRACADOS NO PORTO DE PONTA DA MADEIRA</div></div><div class="cv-item"><div class="label">Autores</div><div class="value">Santos, V.R.P.; Oliveira, C.B.M.; Cunha, D.R.; Queiroz, A.</div></div><div class="cv-item"><div class="label">Evento / Local</div><div class="value">XI CIDESPORT, Florianópolis</div></div><div class="cv-item"><div class="label">Site</div><div class="value"><a href="https://cidesport.com/wp-content/uploads/2024/07/Anais_integra_v2.pdf" rel="noopener" target="_blank">https://cidesport.com/wp-content/uploads/2024/07/Anais_integra_v2.pdf</a></div></div></article></div>
+</section>
+<section class="tab-content" id="tab3" style="display:none;">
+<h2>Produção técnica</h2>
+<div class="cv-list"><article class="cv-card"><div class="cv-item"><div class="label">Ano</div><div class="value">2025</div></div><div class="cv-item"><div class="label">Título</div><div class="value">Assistente de Mineração de Texto</div></div><div class="cv-item"><div class="label">Autoria / Parcerias</div><div class="value">Cunha, D.R.</div></div><div class="cv-item"><div class="label">Site</div><div class="value"><a href="https://darlianecunha.github.io/portfolioferramentas/" rel="noopener" target="_blank">https://darlianecunha.github.io/portfolioferramentas/</a><a href="https://textmininginput.streamlit.app/" rel="noopener" target="_blank">https://textmininginput.streamlit.app/</a></div></div></article><article class="cv-card"><div class="cv-item"><div class="label">Ano</div><div class="value">2025</div></div><div class="cv-item"><div class="label">Título</div><div class="value">Atributos ODS – Setor Portuário</div></div><div class="cv-item"><div class="label">Autoria / Parcerias</div><div class="value">Cunha, D.R.; Costa, M.D.C.; Oliveira, C.B.M.</div></div><div class="cv-item"><div class="label">Site</div><div class="value"><a href="https://darlianecunha.github.io/portfolioferramentas/" rel="noopener" target="_blank">https://darlianecunha.github.io/portfolioferramentas/</a><a href="https://modeloods-ff6md9cyz5pfwinhzlupgm.streamlit.app/" rel="noopener" target="_blank">https://modeloods-ff6md9cyz5pfwinhzlupgm.streamlit.app/</a></div></div></article></div>
+</section>
+<section class="tab-content" id="tab4" style="display:none;">
+<h2>Sugestões</h2>
+<div class="cv-list"><article class="cv-card"><div class="cv-item"><div class="label">Título</div><div class="value">portfólio do Grupo Banco Mundial</div></div><div class="cv-item"><div class="label">Site</div><div class="value"><a href="https://brasilaberto.worldbank.org/pt/portfolio" rel="noopener" target="_blank">https://brasilaberto.worldbank.org/pt/portfolio</a></div></div></article><article class="cv-card"><div class="cv-item"><div class="label">Título</div><div class="value">portfólio do Grupo Banco Mundial</div></div><div class="cv-item"><div class="label">Site</div><div class="value"><a href="https://projects.worldbank.org/en/projects-operations/projects-list?os=0" rel="noopener" target="_blank">https://projects.worldbank.org/en/projects-operations/projects-list?os=0</a></div></div></article><article class="cv-card"><div class="cv-item"><div class="label">Título</div><div class="value">Ranking ODS paises-Dashboards</div></div><div class="cv-item"><div class="label">Site</div><div class="value"><a href="https://sdgtransformationcenter.org/reports/sustainable-development-report-2025" rel="noopener" target="_blank">https://sdgtransformationcenter.org/reports/sustainable-development-report-2025</a></div></div></article><article class="cv-card"><div class="cv-item"><div class="label">Título</div><div class="value">Ranking ODS paises-Dashboards</div></div><div class="cv-item"><div class="label">Site</div><div class="value"><a href="https://dashboards.sdgindex.org/map/" rel="noopener" target="_blank">https://dashboards.sdgindex.org/map/</a></div></div></article><article class="cv-card"><div class="cv-item"><div class="label">Título</div><div class="value">GRI</div></div><div class="cv-item"><div class="label">Site</div><div class="value"><a href="https://www.globalreporting.org/how-to-use-the-gri-standards/gri-standards-portuguese-translations/" rel="noopener" target="_blank">https://www.globalreporting.org/how-to-use-the-gri-standards/gri-standards-portuguese-translations/</a></div></div></article><article class="cv-card"><div class="cv-item"><div class="label">Título</div><div class="value">Publicacoes Naçoes Unidas PT</div></div><div class="cv-item"><div class="label">Site</div><div class="value"><a href="https://brasil.un.org/pt-br/resources/publications" rel="noopener" target="_blank">https://brasil.un.org/pt-br/resources/publications</a></div></div></article><article class="cv-card"><div class="cv-item"><div class="label">Título</div><div class="value">Publicacoes Banco Mundial</div></div><div class="cv-item"><div class="label">Site</div><div class="value"><a href="https://openknowledge.worldbank.org/communities/db684e75-3a3f-5b5e-8efb-605263d0ae29" rel="noopener" target="_blank">https://openknowledge.worldbank.org/communities/db684e75-3a3f-5b5e-8efb-605263d0ae29</a></div></div></article><article class="cv-card"><div class="cv-item"><div class="label">Título</div><div class="value">Prioridades dos Portos Europeus</div></div><div class="cv-item"><div class="label">Site</div><div class="value"><a href="https://www.espo.be/media/ESPO%20Environmental%20Report%202024.pdf" rel="noopener" target="_blank">https://www.espo.be/media/ESPO%20Environmental%20Report%202024.pdf</a></div></div></article><article class="cv-card"><div class="cv-item"><div class="label">Título</div><div class="value">Programa Brasileiro GHG Protocol </div></div><div class="cv-item"><div class="label">Site</div><div class="value"><a href="https://eaesp.fgv.br/centros/centro-estudos-sustentabilidade/projetos/programa-brasileiro-ghg-protocol" rel="noopener" target="_blank">https://eaesp.fgv.br/centros/centro-estudos-sustentabilidade/projetos/programa-brasileiro-ghg-protocol</a></div></div></article><article class="cv-card"><div class="cv-item"><div class="label">Título</div><div class="value">Reportagem sobre China</div></div><div class="cv-item"><div class="label">Site</div><div class="value"><a href="https://www.youtube.com/watch?v=3esZkmffbOI" rel="noopener" target="_blank">https://www.youtube.com/watch?v=3esZkmffbOI</a></div></div></article><article class="cv-card"><div class="cv-item"><div class="label">Título</div><div class="value">Riscos Globais</div></div><div class="cv-item"><div class="label">Site</div><div class="value"><a href="https://www.weforum.org/publications/global-risks-report-2025/" rel="noopener" target="_blank">https://www.weforum.org/publications/global-risks-report-2025/</a></div></div></article><article class="cv-card"><div class="cv-item"><div class="label">Título</div><div class="value">Cidades Sustentáveis</div></div><div class="cv-item"><div class="label">Site</div><div class="value"><a href="https://idsc.cidadessustentaveis.org.br/" rel="noopener" target="_blank">https://idsc.cidadessustentaveis.org.br/</a></div></div></article><article class="cv-card"><div class="cv-item"><div class="label">Título</div><div class="value">IDH- Cidades brasileiras</div></div><div class="cv-item"><div class="label">Site</div><div class="value"><a href="http://www.atlasbrasil.org.br/ranking" rel="noopener" target="_blank">http://www.atlasbrasil.org.br/ranking</a></div></div></article><article class="cv-card"><div class="cv-item"><div class="label">Título</div><div class="value">Hub Pecém</div></div><div class="cv-item"><div class="label">Site</div><div class="value"><a href="https://www.youtube.com/watch?v=b9Lsn5tqbXk" rel="noopener" target="_blank">https://www.youtube.com/watch?v=b9Lsn5tqbXk</a></div></div></article><article class="cv-card"><div class="cv-item"><div class="label">Título</div><div class="value">Hub Pecém</div></div><div class="cv-item"><div class="label">Site</div><div class="value"><a href="https://www.youtube.com/watch?v=PnOWZ5oTu6Q" rel="noopener" target="_blank">https://www.youtube.com/watch?v=PnOWZ5oTu6Q</a></div></div></article><article class="cv-card"><div class="cv-item"><div class="label">Título</div><div class="value">Vale (máquina remotas)</div></div><div class="cv-item"><div class="label">Site</div><div class="value"><a href="https://www.youtube.com/watch?v=j3T2Sfr6bT8" rel="noopener" target="_blank">https://www.youtube.com/watch?v=j3T2Sfr6bT8</a></div></div></article><article class="cv-card"><div class="cv-item"><div class="label">Título</div><div class="value">Porto de Rotterdam</div></div><div class="cv-item"><div class="label">Site</div><div class="value"><a href="https://www.youtube.com/watch?v=JVxIWqgPofg" rel="noopener" target="_blank">https://www.youtube.com/watch?v=JVxIWqgPofg</a></div></div></article><article class="cv-card"><div class="cv-item"><div class="label">Título</div><div class="value">Relatórios de Sustentabilidade Portos Brasil</div></div><div class="cv-item"><div class="label">Site</div><div class="value"><a href="https://drive.google.com/drive/folders/14awutHfCbnX9GCSgKSiscs3sgyriMlB7" rel="noopener" target="_blank">https://drive.google.com/drive/folders/14awutHfCbnX9GCSgKSiscs3sgyriMlB7</a></div></div></article><article class="cv-card"><div class="cv-item"><div class="label">Título</div><div class="value">Relatórios COP</div></div><div class="cv-item"><div class="label">Site</div><div class="value"><a href="https://drive.google.com/drive/folders/1lSrBzqIm7hl31-7ajm16_Pp2Hk6X98Fi" rel="noopener" target="_blank">https://drive.google.com/drive/folders/1lSrBzqIm7hl31-7ajm16_Pp2Hk6X98Fi</a></div></div></article><article class="cv-card"><div class="cv-item"><div class="label">Título</div><div class="value">Artigos do meu grupo</div></div><div class="cv-item"><div class="label">Site</div><div class="value"><a href="https://drive.google.com/drive/folders/1Ua1eP73GhP6Ei3BgtFGl1HvFPD9l8OB4" rel="noopener" target="_blank">https://drive.google.com/drive/folders/1Ua1eP73GhP6Ei3BgtFGl1HvFPD9l8OB4</a></div></div></article></div>
+</section>
+</div>
 <script>
 document.addEventListener('DOMContentLoaded', function() {
   const buttons = document.querySelectorAll('.tab-btn');
@@ -451,6 +87,5 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 </script>
-
 </body>
 </html>
