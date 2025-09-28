@@ -6,34 +6,25 @@
 <title>CV • Darliane Ribeiro Cunha</title>
 
 <style>
-:root {
-  --bg: #0d2b1f;
-  --bg-2: #12402c;
-  --accent: #2ec27e;
-  --text: #e8f5ef;
-  --muted: #b6d3c5;
-  --border: #1f5a42;
-  --shadow: rgba(0,0,0,0.3);
-}
-* { box-sizing: border-box; }
-html, body { margin: 0; padding: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, 'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif; }
-body { background: linear-gradient(180deg, var(--bg) 0%, #0b241a 100%); color: var(--text); line-height: 1.5; }
-.container { max-width: 1200px; margin: 40px auto; padding: 0 20px 40px; }
-.header { background: var(--bg-2); border: 1px solid var(--border); border-radius: 18px; padding: 24px; box-shadow: 0 10px 24px var(--shadow); position: sticky; top: 16px; z-index: 100; }
-.title { margin: 0; font-size: 28px; letter-spacing: 0.3px; line-height: 1.2; }
-.subtitle { margin: 6px 0 0 0; font-size: 14px; color: var(--muted); }
-.tabs { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
-.tab-btn { background: transparent; color: var(--text); border: 1px solid var(--border); padding: 10px 14px; border-radius: 12px; cursor: pointer; transition: all .2s ease; box-shadow: 0 4px 10px var(--shadow); font-weight: 600; }
-.tab-btn:hover { background: #0f3526; transform: translateY(-1px); }
-.tab-btn.active { background: var(--accent); color: #0b2017; border-color: transparent; }
-.tab-content { background: rgba(18, 64, 44, 0.6); border: 1px solid var(--border); border-radius: 18px; padding: 18px; margin-top: 18px; box-shadow: 0 10px 24px var(--shadow); }
-.tab-content h2 { margin-top: 0; font-size: 20px; color: var(--accent); }
-.cv-table { width: 100%; border-collapse: collapse; color: var(--text); font-size: 14px; }
-.cv-table th, .cv-table td { border: 1px solid var(--border); padding: 10px 12px; vertical-align: top; }
-.cv-table th { background: #0f3526; position: sticky; top: 0; z-index: 1; }
-.cv-table tr:nth-child(even) td { background: rgba(13, 43, 31, 0.45); }
-.cv-table a { color: var(--accent); text-decoration: none; border-bottom: 1px dashed rgba(46,194,126,0.4); }
-.cv-table a:hover { border-bottom-color: var(--accent); }
+:root { --bg:#0d2b1f; --bg-2:#12402c; --accent:#2ec27e; --text:#e8f5ef; --muted:#b6d3c5; --border:#1f5a42; --shadow:rgba(0,0,0,0.3); }
+*{box-sizing:border-box} html,body{margin:0;padding:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Helvetica Neue,Arial,Noto Sans,Liberation Sans,sans-serif}
+body{background:linear-gradient(180deg,var(--bg) 0%,#0b241a 100%);color:var(--text);line-height:1.5}
+.container{max-width:1200px;margin:40px auto;padding:0 20px 40px}
+.header{background:var(--bg-2);border:1px solid var(--border);border-radius:18px;padding:24px;box-shadow:0 10px 24px var(--shadow);position:sticky;top:16px;z-index:100}
+.title{margin:0;font-size:28px;letter-spacing:.3px;line-height:1.2}
+.subtitle{margin:6px 0 0 0;font-size:14px;color:var(--muted)}
+.tabs{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.tab-btn{background:transparent;color:var(--text);border:1px solid var(--border);padding:10px 14px;border-radius:12px;cursor:pointer;transition:all .2s ease;box-shadow:0 4px 10px var(--shadow);font-weight:600}
+.tab-btn:hover{background:#0f3526;transform:translateY(-1px)}
+.tab-btn.active{background:var(--accent);color:#0b2017;border-color:transparent}
+.tab-content{background:rgba(18,64,44,.6);border:1px solid var(--border);border-radius:18px;padding:18px;margin-top:18px;box-shadow:0 10px 24px var(--shadow)}
+.tab-content h2{margin-top:0;font-size:20px;color:var(--accent)}
+.cv-table{width:100%;border-collapse:collapse;color:var(--text);font-size:14px}
+.cv-table th,.cv-table td{border:1px solid var(--border);padding:10px 12px;vertical-align:top}
+.cv-table th{background:#0f3526;position:sticky;top:0;z-index:1}
+.cv-table tr:nth-child(even) td{background:rgba(13,43,31,.45)}
+.cv-table a{color:var(--accent);text-decoration:none;border-bottom:1px dashed rgba(46,194,126,.4)}
+.cv-table a:hover{border-bottom-color:var(--accent)}
 </style>
 
 </head>
@@ -47,7 +38,7 @@ body { background: linear-gradient(180deg, var(--bg) 0%, #0b241a 100%); color: v
 <button class="tab-btn " data-target="tab1">cap de livros</button>
 <button class="tab-btn " data-target="tab2">anais de congressos</button>
 <button class="tab-btn " data-target="tab3">producao técnica</button>
-<button class="tab-btn " data-target="tab4">recomendacoes de leitura</button>
+<button class="tab-btn " data-target="tab4">Recomendações de Leitura</button>
 
       </div>
     </header>
@@ -179,27 +170,55 @@ body { background: linear-gradient(180deg, var(--bg) 0%, #0b241a 100%); color: v
         <table border="1" class="dataframe cv-table">
   <thead>
     <tr style="text-align: right;">
-      <th>Site</th>
+      <th>Ano</th>
+      <th>Título do Capítulo</th>
+      <th>Autores</th>
+      <th>Livro</th>
+      <th>DOI / ISBN / Site</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>ISBN 978-65-5363-262-2 – EDUFMA</td>
+      <td>2023</td>
+      <td>Análise de viabilidade do sistema de aproveitamento de água pluvial em unidade residencial</td>
+      <td>França Júnior, F.A.; Cunha, D.R.</td>
+      <td>Tópicos estratégicos portuários III, v.3, p.97–116</td>
+      <td><a href="https://www.edufma.ufma.br/index.php/produto/topicos-estrategicos-portuarios/" target="_blank" rel="noopener">https://www.edufma.ufma.br/index.php/produto/topicos-estrategicos-portuarios/</a></td>
     </tr>
     <tr>
-      <td>ISBN 978-65-5363-262-2 – EDUFMA</td>
+      <td>2023</td>
+      <td>Gerenciamento de resíduos nos portos públicos brasileiros</td>
+      <td>Lobato, L.P.; Cunha, D.R.</td>
+      <td>Tópicos estratégicos portuários III, v.3, p.188–196</td>
+      <td><a href="https://www.edufma.ufma.br/index.php/produto/topicos-estrategicos-portuarios/" target="_blank" rel="noopener">https://www.edufma.ufma.br/index.php/produto/topicos-estrategicos-portuarios/</a></td>
     </tr>
     <tr>
-      <td>ISBN 978-65-5363-262-2 – EDUFMA</td>
+      <td>2023</td>
+      <td>Gerenciamento de resíduos sólidos nos portos públicos nordestinos</td>
+      <td>Pereira, E.B.C.; Cunha, D.R.</td>
+      <td>Tópicos estratégicos portuários III, v.3, p.65–80</td>
+      <td><a href="https://www.edufma.ufma.br/index.php/produto/topicos-estrategicos-portuarios/" target="_blank" rel="noopener">https://www.edufma.ufma.br/index.php/produto/topicos-estrategicos-portuarios/</a></td>
     </tr>
     <tr>
-      <td>ISBN 978-65-5363-262-2 – EDUFMA</td>
+      <td>2023</td>
+      <td>Inovações no setor portuário</td>
+      <td>Couto, E.D.; Cunha, D.R.</td>
+      <td>Tópicos estratégicos portuários III, v.3, p.81–96</td>
+      <td><a href="https://www.edufma.ufma.br/index.php/produto/topicos-estrategicos-portuarios/" target="_blank" rel="noopener">https://www.edufma.ufma.br/index.php/produto/topicos-estrategicos-portuarios/</a></td>
     </tr>
     <tr>
-      <td>ISBN 978-65-5363-262-2 – EDUFMA</td>
+      <td>2023</td>
+      <td>Mulheres a bordo: a sustentabilidade social e a presença da mulher nos portos</td>
+      <td>Ferreira, M.L.; Cunha, D.R.</td>
+      <td>Tópicos estratégicos portuários III, v.3, p.210–223</td>
+      <td><a href="https://www.edufma.ufma.br/index.php/produto/topicos-estrategicos-portuarios/" target="_blank" rel="noopener">https://www.edufma.ufma.br/index.php/produto/topicos-estrategicos-portuarios/</a></td>
     </tr>
     <tr>
-      <td>ISBN 978-65-5363-097-0 – Manifesto ESG</td>
+      <td>2022</td>
+      <td>A evidenciação da informação de sustentabilidade nos portos brasileiros</td>
+      <td>Cunha, D.R.</td>
+      <td>Manifesto: ESG Portuário, p.79–88</td>
+      <td><a href="https://labportos.log.br/assets/Manifesto_ESG_Portuario.pdf" target="_blank" rel="noopener">https://labportos.log.br/assets/Manifesto_ESG_Portuario.pdf</a></td>
     </tr>
   </tbody>
 </table>
@@ -337,7 +356,7 @@ body { background: linear-gradient(180deg, var(--bg) 0%, #0b241a 100%); color: v
     </section>
     
     <section id="tab4" class="tab-content" style="display:none;">
-        <h2>recomendacoes de leitura</h2>
+        <h2>Recomendações de Leitura</h2>
         <table border="1" class="dataframe cv-table">
   <thead>
     <tr style="text-align: right;">
@@ -457,9 +476,7 @@ document.addEventListener('DOMContentLoaded', function() {
       const target = btn.getAttribute('data-target');
       buttons.forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
-      tabs.forEach(tab => {
-        tab.style.display = (tab.id === target) ? 'block' : 'none';
-      });
+      tabs.forEach(tab => { tab.style.display = (tab.id === target) ? 'block' : 'none'; });
     });
   });
 });
